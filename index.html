@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  </head>
+  <style>
+    @font-face {
+      font-family: font1;
+      src: url('fonts/font-1/Raleway-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+      font-family: font2;
+      src: url('fonts/font-2/Raleway-VariableFont_wght.ttf');
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: font1;
+
+    }
+
+    h1,
+
+    h4 {
+      font-family: font2;
+
+    }
+
+    h2 {
+      font-family: font2;
+      padding: 20px;
+    }
+
+    :root {
+      --mainColor: #1E293B;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.3rem;
+      padding: 0 10px 0 0;
+
+    }
+
+    .head {
+      background-color: var(--mainColor);
+      color: white;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo i {
+      color: white;
+    }
+
+    main {
+      padding: 0 20px;
+    }
+
+    .display-section {
+      background-color: var(--mainColor);
+      padding: 15px 20px;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: end;
+      height: 375px;
+
+    }
+
+    .dis-info {
+      margin-top: 7.5%;
+
+      line-height: 1.9rem;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+
+    input {
+      width: 70%;
+      padding: 8px 20px;
+      border-radius: 10px;
+
+    }
+
+    input::placeholder {
+      font-size: 14px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      padding: 5px 20px;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+    }
+
+    .features {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px rgb(238, 232, 232) solid;
+    }
+
+    .file-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    i {
+      color: var(--mainColor);
+    }
+
+    .reviews .review-box img {
+      width: 50px;
+      height: 50px;
+      clip-path: circle();
+    }
+
+    .reviews {
+      padding: 15px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      align-items: flex-start;
+
+    }
+
+    .review-box {
+      border: 1px rgb(238, 232, 232) solid;
+      min-width: 200px;
+      background-color: var(--mainColor);
+      color: white;
+      border-radius: 10px;
+
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+
+      align-items: center;
+
+    }
+
+    .reviews .review-box p {
+      text-align: justify;
+
+    }
+
+    .review {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: var(--mainColor);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    footer .profiles i {
+      color: white;
+    }
+
+    .copyright {
+      line-height: 3rem;
+    }
+
+    .links {
+      line-height: 2rem;
+    }
+
+    @media (max-width: 950px) {
+      .display-section {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="head">
+        <div class="logo">
+          <i class="fa-brands fa-html5 fa-3x">
+          </i>
+          <h1>Skillz</h1>
+        </div>
+        <nav>
+          <a href="">Login</a>
+          <a href="">Check Courses</a>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <div class="display-section">
+      <div class="dis-info">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, at?</h2>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <form action="">
+          <input type="text" placeholder="Enter your email">
+          <button>Start Learning</button>
+        </form>
+        <h4>Try out our free courses adipisicing.</h4>
+
+      </div>
+      <div class="dis-img">
+        <img width="500px" height="400px" src="image2.avif" alt="">
+      </div>
+    </div>
+    <div class="features">
+      <div class="card">
+        <div class="file-icon">
+          <i class="fa-regular fa-folder-open fa-2x"></i>
+        </div>
+        <h2>Over 300 available courses</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ex beatae nemo ab exercitationem eligendi,
+          repudiandae praesentium consequatur tempore officia quas libero quae voluptatum. Quas ea consequuntur
+          quibusdam ipsam, quo laborum, accusantium eos maxime quos recusandae temporibus omnis repellat. Reiciendis
+          neque minima vel mollitia esse tenetur impedit ratione magni nam.</p>
+      </div>
+      <div class="card">
+        <div class="file-icon">
+          <i class="fa-solid fa-graduation-cap fa-2x"></i>
+        </div>
+        <h2>Free certificate offered on all courses</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quidem sint, accusantium labore incidunt
+          natus mollitia et minus ex quibusdam eum necessitatibus quis placeat recusandae ea nulla veniam explicabo,
+          enim error itaque sunt! Minima nostrum molestiae autem quibusdam sed qui id, alias et earum cum harum animi,
+          perferendis mollitia ratione.</p>
+      </div>
+      <div class="card">
+        <div class="file-icon">
+          <i class="fa-solid fa-book fa-2x"></i>
+        </div>
+        <h2>Book 1 on 1 session as low as $5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ab hic corrupti repudiandae autem ex
+          consectetur ratione voluptatem reiciendis perspiciatis corporis iste repellat deserunt nesciunt dolorum
+          debitis, quos a mollitia illum incidunt doloribus! Omnis fuga quos sunt aperiam ad quod repellat assumenda,
+          est consequuntur in, odio unde dolore eos nobis?</p>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="review-box">
+        <div class="details">
+          <img src="image2.avif" alt="">
+          <div class="person-info">
+            <h4 class="name">Ryan Florence</h4>
+            <p class="title">Programmer</p>
+          </div>
+
+        </div>
+        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea, recusandae quasi vitae
+          beatae ullam.</p>
+      </div>
+      <div class="review-box">
+        <div class="details">
+          <img src="image2.avif" alt="">
+          <div class="person-info">
+            <h4 class="name">Ryan Florence</h4>
+            <p class="title">Programmer</p>
+          </div>
+
+        </div>
+        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quisquam.</p>
+      </div>
+      <div class="review-box">
+        <div class="details">
+          <img src="image2.avif" alt="">
+          <div class="person-info">
+            <h4 class="name">Ryan Florence</h4>
+            <p class="title">Programmer</p>
+          </div>
+
+        </div>
+        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quos ducimus nulla sapiente
+          omnis accusantium laborum ratione ipsam praesentium rem! Inventore sequi perferendis molestiae iure voluptates
+          saepe adipisci culpa doloremque!</p>
+      </div>
+      <div class="review-box">
+        <div class="details">
+          <img src="image2.avif" alt="">
+          <div class="person-info">
+            <h4 class="name">Ryan Florence</h4>
+            <p class="title">Programmer</p>
+          </div>
+
+        </div>
+        <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, modi beatae quia distinctio
+          quas dicta animi odit ratione temporibus totam aspernatur fugit asperiores at, cum esse eum optio explicabo
+          corrupti voluptates incidunt commodi perferendis? Similique aliquam vitae iste dolores atque!</p>
+      </div>
+      <div class="review-box">
+        <div class="details">
+          <img src="image2.avif" alt="">
+          <div class="person-info">
+            <h4 class="name">Ryan Florence</h4>
+            <p class="title">Programmer</p>
+          </div>
+
+        </div>
+        <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati non a at
+          laboriosam neque est minus distinctio voluptas id eveniet vero, eos cupiditate omnis, nisi quod? Natus veniam
+          rerum accusamus fugiat vitae culpa provident quis repellendus at quo dicta, repellat nostrum, dolores ex
+          quidem suscipit id omnis quas tempora!</p>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        <h1>Skillz</h1>
+        <p>Copyright &copy 2021</p>
+      </div>
+      <nav class="links">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Tutors</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="profiles">
+        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fab fa-whatsapp fa-2x"></i></a>
+      </div>
+    </footer>
+  </body>
+
+</html>
